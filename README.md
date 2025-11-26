@@ -1,1 +1,5 @@
-# maggooose.github.io
+SQL
+
+Tableau
+
+Python
