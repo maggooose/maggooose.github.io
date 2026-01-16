@@ -3,7 +3,7 @@ title: Sending Email Notifcation using Python
 date:  2026-01-16 17:00:00 +0800
 categories: [Knowledge, Python]
 tags: [python, documentation, knowledge]     # TAG names should always be lowercase
-description: A guide on using smtplib library for email notifications.
+description: A guide on sending email notifications using smtplib library.
 ---
 
 ## Imports

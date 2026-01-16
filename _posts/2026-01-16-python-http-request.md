@@ -1,9 +1,9 @@
 ---
-title: Making HTTP request to Sharepoint
+title: Making HTTP request to Sharepoint using Python
 date:  2026-01-16 22:00:00 +0800
 categories: [Knowledge, Python]
 tags: [python, documentation, knowledge]     # TAG names should always be lowercase
-description: A guide on making HTTP request to SharePoint using service account.
+description: A guide on making HTTP request to SharePoint using a service account.
 ---
 
 ## Imports
