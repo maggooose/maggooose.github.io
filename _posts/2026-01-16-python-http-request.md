@@ -71,7 +71,7 @@ conn = get_connection(service_account_credentials['user'],
                       service_account_credentials['domain'])
 ```
 
-## Use Case (to be updated)
+## Use Case
 The function below will be used to download file from SharePoint using GET resquest.
 
 ```python
