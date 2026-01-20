@@ -72,5 +72,44 @@ conn = get_connection(service_account_credentials['user'],
 ```
 
 ## Use Case (to be updated)
+The function below will be used to download file from SharePoint using GET resquest.
 
-Reading excel files from SharePoint folder.
+```python
+#------------------------------------------
+# Function to download file from SharePoint
+#------------------------------------------
+def download_file(con, server_url, site_url, server_relative_path, output_dir='downloaded_files'):
+    
+    # Ensure output directory exists to download files
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # Assign file name and local path
+    filename = os.path.basename(server_relative_path)
+    local_path = os.path.join(output_dir, filename)
+    
+    # Download file from the relative URL of the file in SharePoint folder
+    url = f"{server_url}{site_url}_api/web/GetFileByServerRelativeUrl('{quote(server_relative_path)}')/$value"
+    resp = con.get(url)
+    
+    # Check for successful response
+    if resp.status_code == 200:
+        # Write content to local folder
+        with open(local_path, 'wb') as f:
+            f.write(resp.content)
+        print(f"Downloaded: {local_path}")
+        
+    else:
+        print(f"Failed to download: {server_relative_path}")
+        print(f"Reason: {resp.text}")
+    return local_path
+```
+
+Call the function with the follow arguments.
+
+```python
+download_file(conn, service_account_credentials['server'], service_account_credentials['site'], sever_relative_path)
+```
+
+
+
