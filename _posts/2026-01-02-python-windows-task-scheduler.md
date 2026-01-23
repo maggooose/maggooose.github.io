@@ -10,6 +10,7 @@ Windows task scheduler is used to run a python script on a scheduled time.
 
 ## Create a task
 Open windows task scheduler and select `Create Task...` under Actions.
+
 ![img-description](../assets/images/windows-task-scheduler/actions_dropdown.jpg)
 _Select "Create Task..."_
 
