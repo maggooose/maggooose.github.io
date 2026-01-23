@@ -6,5 +6,5 @@ tags: [python, documentation, knowledge]     # TAG names should always be lowerc
 description: A guide on creating a scheduled task using windows task scheduler.
 ---
 
-![img-description](../assets/images/windows-ask-scheduler/actions_dropdown.jpg)
+![img-description](../assets/images/windows-task-scheduler/actions_dropdown.jpg)
 _Image Caption_
