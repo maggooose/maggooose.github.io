@@ -27,5 +27,5 @@ SELECT
 FROM Queries as q
 LEFT JOIN temp_table as t
 ON q.query_name = t.query_name
-GROUP BY query_name.
+GROUP BY query_name
 ```
